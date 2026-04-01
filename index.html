@@ -42,12 +42,31 @@ li {
   border-radius: 10px;
 }
     header {
-      background-color: #1f1f1f;
-      color: #ffffff;
-      text-align: center;
-      padding: 2rem;
-      border-bottom: 1px solid #333;
-    }
+  background: url('IMG_2172.JPEG') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+header h1,
+header h2 {
+  position: relative;
+  z-index: 1;
+}
     header img {
       width: 150px;
       height: 150px;
@@ -103,7 +122,7 @@ li {
   <header>
     <h1>Sanidhya Tripathi</h1>
     <h2>Content Writer | Turning Real-World Experience into Clear, Impactful Content</h2>
-    <img src="sanidhya.jpg" alt="Sanidhya Tripathi">
+   
   </header>
 
   <main>
